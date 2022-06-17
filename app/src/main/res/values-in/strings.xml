@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Submission1bahar</string>
+    <string name="Login">Masuk</string>
+    <string name="Register">Daftar</string>
+    <string name="test_login">Masuk Terlebih dahulu</string>
+    <string name="Email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="email_dont_match">Password Gagal masuk</string>
+    <string name="password_dont_match">Email Gagal masuk</string>
+    <string name="input_name">Masukan name</string>
+    <string name="input_email">Masukan Email</string>
+    <string name="input_password">Masukan Password</string>
+    <string name="Logout">Logout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="yakin">Anda Yakin Logout?</string>
+    <string name="Censel">Censel</string>
+    <string name="descripsion">descripsion</string>
+    <string name="judul">Judul</string>
+    <string name="tv_judul">Judul</string>
+    <string name="tv_descripsi">Descripsi</string>
+    <string name="camera_x">Kamera X</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Gallery</string>
+    <string name="upload">Unggah</string>
+    <string name="appwidget_text">Storry Dicoding</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">Storry app</string>
+    <string name="empty_text">No Data</string>
+    <string name="bahasa">localization bahasa</string>
+</resources>
