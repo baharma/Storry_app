@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
 
 
         val pref = UserPreference.getInstance(dataStore)
-        var user = pref.getUserAuth()
+
         mainViewModel = ViewModelProvider(this, ViewModelFactory(pref,this))[MainViewModel::class.java]
         mainViewModel.getToken().observe(
             this

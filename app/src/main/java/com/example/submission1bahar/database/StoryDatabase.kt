@@ -13,6 +13,7 @@ import com.example.submission1bahar.viewmodel.ListStoryItem
     exportSchema = false
 )
 abstract class StoryDatabase:RoomDatabase() {
+//    abstract fun storyDao(): StoryDao
     companion object{
         @Volatile
         private var INSTANCE:StoryDatabase?=null

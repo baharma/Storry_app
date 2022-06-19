@@ -9,6 +9,10 @@ plugins {
 android {
     compileSdk 31
 
+    kotlinOptions {
+        jvmTarget = '1.8'
+        freeCompilerArgs += ["-Xopt-in=kotlin.RequiresOptIn"]
+    }
     defaultConfig {
         applicationId "com.example.submission1bahar"
         minSdk 21

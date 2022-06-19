@@ -9,6 +9,6 @@
 </item>
     <item
         android:id="@+id/menu2"
-        android:title="@string/bahasa" />
+        android:title="@string/maps" />
 </group>
 </menu>

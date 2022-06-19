@@ -3,6 +3,7 @@ package com.example.submission1bahar.api
 import com.example.submission1bahar.preferences.ErrorResponse
 import com.example.submission1bahar.preferences.LoginResponse
 import com.example.submission1bahar.viewmodel.GetAllStories
+import com.example.submission1bahar.viewmodel.ListStoryItem
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 
@@ -38,10 +39,14 @@ interface ApiInterface {
     suspend fun getAllStories(
         @Header("Authorization") token: String,
         @Query("page") page: Int,
-        @Query("size") size: Int
+        @Query("size") size: Int,
+        @Query("location") location: Int? = null
     ): GetAllStories
 
-
+    @GET("v1/stories")
+     fun getAllMapsStory(
+        @Header("Authorization")token: String
+    ): Call<GetAllStories>
 
 
 }

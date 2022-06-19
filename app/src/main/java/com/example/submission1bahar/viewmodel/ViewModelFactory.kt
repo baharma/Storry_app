@@ -11,11 +11,9 @@ import com.example.submission1bahar.preferences.UserPreference
 
 class ViewModelFactory(private val pref: UserPreference,private val context: Context) :
     ViewModelProvider.NewInstanceFactory() {
-    private lateinit var mApplication: Application
 
-    fun setApplication(application: Application) {
-        mApplication = application
-    }
+
+
 
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
@@ -30,6 +28,9 @@ class ViewModelFactory(private val pref: UserPreference,private val context: Con
         }
         if (modelClass.isAssignableFrom(ViewModelLogout::class.java)) {
             return ViewModelLogout(pref) as T
+        }
+        if(modelClass.isAssignableFrom(ViewModelMaps::class.java)){
+            return ViewModelMaps(pref) as T
         }
         throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
     }
